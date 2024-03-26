@@ -1,215 +1,195 @@
-<!--
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text">
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超级组</font></font></h1><a id="user-content-superset" class="anchor" aria-label="永久链接： 超级集" href="#superset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://opensource.org/licenses/Apache-2.0" rel="nofollow"><img src="https://camo.githubusercontent.com/db9dfde8049c5d66ba62fde707d2cfb30e26f9f26ff274c3442c0aec1ec410a4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d417061636865253230322e302d626c75652e737667" alt="执照" data-canonical-src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" style="max-width: 100%;"></a>
+<a href="https://github.com/apache/superset/tree/latest"><img src="https://camo.githubusercontent.com/3e8a94996cb002cae33e3a45bf8b481680e7685dc3310482d5030d7852756d51/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f72656c656173652f6170616368652f73757065727365743f736f72743d73656d766572" alt="GitHub 发布（最新 SemVer）" data-canonical-src="https://img.shields.io/github/v/release/apache/superset?sort=semver" style="max-width: 100%;"></a>
+<a href="https://github.com/apache/superset/actions"><img src="https://github.com/apache/superset/workflows/Python/badge.svg" alt="构建状态" style="max-width: 100%;"></a>
+<a href="https://badge.fury.io/py/apache-superset" rel="nofollow"><img src="https://camo.githubusercontent.com/3c65013341e1e773e2aed41b4a083dc98fa4a698584903353db528ba5bd54232/68747470733a2f2f62616467652e667572792e696f2f70792f6170616368652d73757065727365742e737667" alt="PyPI版本" data-canonical-src="https://badge.fury.io/py/apache-superset.svg" style="max-width: 100%;"></a>
+<a href="https://codecov.io/github/apache/superset" rel="nofollow"><img src="https://camo.githubusercontent.com/d43d68e5b6b1c8aa6e40e7b3234cb2e78a09d5a266304f6532d232cc548b9d76/68747470733a2f2f636f6465636f762e696f2f6769746875622f6170616368652f73757065727365742f636f7665726167652e7376673f6272616e63683d6d6173746572" alt="覆盖状态" data-canonical-src="https://codecov.io/github/apache/superset/coverage.svg?branch=master" style="max-width: 100%;"></a>
+<a href="https://pypi.python.org/pypi/apache-superset" rel="nofollow"><img src="https://camo.githubusercontent.com/dd76d643e795c0b7aeb6d306e2c42ef747ef57a952f22a493ea427dc1aaaedfa/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6170616368652d73757065727365742e7376673f6d61784167653d32353932303030" alt="皮伊" data-canonical-src="https://img.shields.io/pypi/pyversions/apache-superset.svg?maxAge=2592000" style="max-width: 100%;"></a>
+<a href="http://bit.ly/join-superset-slack" rel="nofollow"><img src="https://camo.githubusercontent.com/21134ce22db8dc96c8ffed33cbfe3912dd1a17cf81c747983fbcad9769ac6509/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d6a6f696e2d6f72616e67652e737667" alt="加入 Slack" data-canonical-src="https://img.shields.io/badge/slack-join-orange.svg" style="max-width: 100%;"></a>
+<a href="https://superset.apache.org" rel="nofollow"><img src="https://camo.githubusercontent.com/709a795688a4bf89aaf11b2559fce14079740c52a20884a64a9d6ac4ba7607db/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f63732d6170616368652e6f72672d626c75652e737667" alt="文档" data-canonical-src="https://img.shields.io/badge/docs-apache.org-blue.svg" style="max-width: 100%;"></a></p>
+<themed-picture data-catalyst-inline="true" data-catalyst=""><picture width="500">
+  <source media="(prefers-color-scheme: dark)" alt="Superset 标志（深色）">
+  <img src="https://github.com/apache/superset/raw/master/superset-frontend/src/assets/branding/superset-logo-horiz-apache.png" alt="Superset标志（浅色）" style="visibility:visible;max-width:100%;">
+</picture></themed-picture>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个现代的、企业级的商业智能 Web 应用程序。</font></font></p>
+<p dir="auto"><a href="#why-superset"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么是超级组？</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a href="#supported-databases"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的数据库</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="#installation-and-configuration"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和配置</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="/apache/superset/blob/master/RELEASING/README.md#release-notes-for-recent-releases"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发行说明</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="#get-involved"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参与其中</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="#contributor-guide"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者指南</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="#resources"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="/apache/superset/blob/master/RESOURCES/INTHEWILD.md"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Superset 的组织</font></font></strong></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么是超级组？</font></font></h2><a id="user-content-why-superset" class="anchor" aria-label="永久链接：为什么是超级组？" href="#why-superset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 是一个现代数据探索和数据可视化平台。 Superset 可以取代或增强许多团队的专有商业智能工具。 Superset 与各种数据源很好地集成。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超级集提供：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于快速构建图表的</font><font style="vertical-align: inherit;">无</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码界面</font></font></strong><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于高级查询的</font><font style="vertical-align: inherit;">强大的、基于 Web 的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQL 编辑器</font></font></strong><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于快速定义自定义维度和指标的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">轻量级语义</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">层</font></font></li>
+<li><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对几乎所有 SQL</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据库或数据引擎的</font><font style="vertical-align: inherit;">开箱即用支持</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">各种</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">精美的可视化效果</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可展示您的数据，从简单的条形图到地理空间可视化</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">轻量级、可配置的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缓存层</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有助于减轻数据库负载</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高度可扩展的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全角色和身份验证</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选项</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于编程定制</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为扩展而从头开始设计的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">云原生</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">架构</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">屏幕截图和 GIF</font></font></h2><a id="user-content-screenshots--gifs" class="anchor" aria-label="永久链接：屏幕截图和 GIF" href="#screenshots--gifs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视频概述</font></font></strong></p>
+<details open="" class="details-reset border rounded-2">
+  <summary class="px-3 py-2">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
+    <path d="M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z"></path>
+</svg>
+    <span aria-label="视频说明 Superset.Overview.Video.1080.mp4" class="m-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset.Overview.Video.1080.mp4</font></font></span>
+    <span class="dropdown-caret"></span>
+  </summary>
 
-  http://www.apache.org/licenses/LICENSE-2.0
+  <video src="https://private-user-images.githubusercontent.com/64562059/234390129-321d4f35-cb4b-45e8-89d9-20ae292f34fc.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0NjUyNDYsIm5iZiI6MTcxMTQ2NDk0NiwicGF0aCI6Ii82NDU2MjA1OS8yMzQzOTAxMjktMzIxZDRmMzUtY2I0Yi00NWU4LTg5ZDktMjBhZTI5MmYzNGZjLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzI2VDE0NTU0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFmOWY5YTJlNjM1OGRiNGRhNDcwM2U3YmFkMTM0ZDkxNTg5MTZmZTg0NzZiM2MwZDdhNThlMjViMmFlN2ZhNDMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.PAKkjln8JRG1oinRwZP2DLrkDE9EQpPeyIy6t98fN2U" data-canonical-src="https://private-user-images.githubusercontent.com/64562059/234390129-321d4f35-cb4b-45e8-89d9-20ae292f34fc.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0NjUyNDYsIm5iZiI6MTcxMTQ2NDk0NiwicGF0aCI6Ii82NDU2MjA1OS8yMzQzOTAxMjktMzIxZDRmMzUtY2I0Yi00NWU4LTg5ZDktMjBhZTI5MmYzNGZjLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzI2VDE0NTU0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFmOWY5YTJlNjM1OGRiNGRhNDcwM2U3YmFkMTM0ZDkxNTg5MTZmZTg0NzZiM2MwZDdhNThlMjViMmFlN2ZhNDMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.PAKkjln8JRG1oinRwZP2DLrkDE9EQpPeyIy6t98fN2U" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations
-under the License.
--->
+  </video>
+</details>
 
-# Superset
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/apache/superset?sort=semver)](https://github.com/apache/superset/tree/latest)
-[![Build Status](https://github.com/apache/superset/workflows/Python/badge.svg)](https://github.com/apache/superset/actions)
-[![PyPI version](https://badge.fury.io/py/apache-superset.svg)](https://badge.fury.io/py/apache-superset)
-[![Coverage Status](https://codecov.io/github/apache/superset/coverage.svg?branch=master)](https://codecov.io/github/apache/superset)
-[![PyPI](https://img.shields.io/pypi/pyversions/apache-superset.svg?maxAge=2592000)](https://pypi.python.org/pypi/apache-superset)
-[![Get on Slack](https://img.shields.io/badge/slack-join-orange.svg)](http://bit.ly/join-superset-slack)
-[![Documentation](https://img.shields.io/badge/docs-apache.org-blue.svg)](https://superset.apache.org)
-
-<picture width="500">
-  <source
-    media="(prefers-color-scheme: dark)"
-    src="https://github.com/apache/superset/raw/master/superset-frontend/src/assets/branding/superset-logo-horiz-apache-dark.png"
-    alt="Superset logo (dark)"
-  />
-  <img
-    src="https://github.com/apache/superset/raw/master/superset-frontend/src/assets/branding/superset-logo-horiz-apache.png"
-    alt="Superset logo (light)"
-  />
-</picture>
-
-A modern, enterprise-ready business intelligence web application.
-
-[**Why Superset?**](#why-superset) |
-[**Supported Databases**](#supported-databases) |
-[**Installation and Configuration**](#installation-and-configuration) |
-[**Release Notes**](RELEASING/README.md#release-notes-for-recent-releases) |
-[**Get Involved**](#get-involved) |
-[**Contributor Guide**](#contributor-guide) |
-[**Resources**](#resources) |
-[**Organizations Using Superset**](RESOURCES/INTHEWILD.md)
-
-## Why Superset?
-
-Superset is a modern data exploration and data visualization platform. Superset can replace or augment proprietary business intelligence tools for many teams. Superset integrates well with a variety of data sources.
-
-Superset provides:
-
-- A **no-code interface** for building charts quickly
-- A powerful, web-based **SQL Editor** for advanced querying
-- A **lightweight semantic layer** for quickly defining custom dimensions and metrics
-- Out of the box support for **nearly any SQL** database or data engine
-- A wide array of **beautiful visualizations** to showcase your data, ranging from simple bar charts to geospatial visualizations
-- Lightweight, configurable **caching layer** to help ease database load
-- Highly extensible **security roles and authentication** options
-- An **API** for programmatic customization
-- A **cloud-native architecture** designed from the ground up for scale
-
-## Screenshots & Gifs
-
-**Video Overview**
-
-https://user-images.githubusercontent.com/64562059/234390129-321d4f35-cb4b-45e8-89d9-20ae292f34fc.mp4
-
-<br/>
-
-**Large Gallery of Visualizations**
-
-<kbd><img title="Gallery" src="superset-frontend/src/assets/images/screenshots/gallery.jpg"/></kbd><br/>
-
-**Craft Beautiful, Dynamic Dashboards**
-
-<kbd><img title="View Dashboards" src="superset-frontend/src/assets/images/screenshots/slack_dash.jpg"/></kbd><br/>
-
-**No-Code Chart Builder**
-
-<kbd><img title="Slice & dice your data" src="superset-frontend/src/assets/images/screenshots/explore.jpg"/></kbd><br/>
-
-**Powerful SQL Editor**
-
-<kbd><img title="SQL Lab" src="superset-frontend/src/assets/images/screenshots/sql_lab.jpg"/></kbd><br/>
-
-## Supported Databases
-
-Superset can query data from any SQL-speaking datastore or data engine (Presto, Trino, Athena, [and more](https://superset.apache.org/docs/databases/installing-database-drivers/)) that has a Python DB-API driver and a SQLAlchemy dialect.
-
-Here are some of the major database solutions that are supported:
-
-<p align="center">
-  <img src="superset-frontend/src/assets/images/redshift.png" alt="redshift" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/google-biquery.png" alt="google-biquery" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/snowflake.png" alt="snowflake" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/trino.png" alt="trino" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/presto.png" alt="presto" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/databricks.png" alt="databricks" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/druid.png" alt="druid" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/firebolt.png" alt="firebolt" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/timescale.png" alt="timescale" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/rockset.png" alt="rockset" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/postgresql.png" alt="postgresql" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/mysql.png" alt="mysql" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/mssql-server.png" alt="mssql-server" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/db2.png" alt="db2" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/sqlite.png" alt="sqlite" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/sybase.png" alt="sybase" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/mariadb.png" alt="mariadb" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/vertica.png" alt="vertica" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/oracle.png" alt="oracle" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/firebird.png" alt="firebird" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/greenplum.png" alt="greenplum" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/clickhouse.png" alt="clickhouse" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/exasol.png" alt="exasol" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/monet-db.png" alt="monet-db" border="0" width="200" height="80" />
-  <img src="superset-frontend/src/assets/images/apache-kylin.png" alt="apache-kylin" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/hologres.png" alt="hologres" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/netezza.png" alt="netezza" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/pinot.png" alt="pinot" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/teradata.png" alt="teradata" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/yugabyte.png" alt="yugabyte" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/databend.png" alt="databend" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/starrocks.png" alt="starrocks" border="0" width="200" height="80"/>
-  <img src="superset-frontend/src/assets/images/doris.png" alt="doris" border="0" width="200" height="80"/>
+<br>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大型可视化画廊</font></font></strong></p>
+<p dir="auto"><kbd><a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/screenshots/gallery.jpg"><img title="Gallery" src="/apache/superset/raw/master/superset-frontend/src/assets/images/screenshots/gallery.jpg" style="max-width: 100%;"></a></kbd><br></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作漂亮的动态仪表板</font></font></strong></p>
+<p dir="auto"><kbd><a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/screenshots/slack_dash.jpg"><img title="View Dashboards" src="/apache/superset/raw/master/superset-frontend/src/assets/images/screenshots/slack_dash.jpg" style="max-width: 100%;"></a></kbd><br></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无代码图表生成器</font></font></strong></p>
+<p dir="auto"><kbd><a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/screenshots/explore.jpg"><img title="Slice &amp; dice your data" src="/apache/superset/raw/master/superset-frontend/src/assets/images/screenshots/explore.jpg" style="max-width: 100%;"></a></kbd><br></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">强大的 SQL 编辑器</font></font></strong></p>
+<p dir="auto"><kbd><a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/screenshots/sql_lab.jpg"><img title="SQL Lab" src="/apache/superset/raw/master/superset-frontend/src/assets/images/screenshots/sql_lab.jpg" style="max-width: 100%;"></a></kbd><br></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的数据库</font></font></h2><a id="user-content-supported-databases" class="anchor" aria-label="永久链接：支持的数据库" href="#supported-databases"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 可以从任何具有</font><font style="vertical-align: inherit;">Python DB-API 驱动程序和 SQLAlchemy 方言的SQL 数据存储或数据引擎（Presto、Trino、Athena</font></font><a href="https://superset.apache.org/docs/databases/installing-database-drivers/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等）查询数据。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是支持的一些主要数据库解决方案：</font></font></p>
+<p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/redshift.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/redshift.png" alt="红移" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/google-biquery.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/google-biquery.png" alt="谷歌双向查询" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/snowflake.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/snowflake.png" alt="雪花" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/trino.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/trino.png" alt="特里诺" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/presto.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/presto.png" alt="急板" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/databricks.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/databricks.png" alt="数据块" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/druid.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/druid.png" alt="德鲁伊" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/firebolt.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/firebolt.png" alt="火弩箭" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/timescale.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/timescale.png" alt="时间尺度" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/rockset.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/rockset.png" alt="摇滚套装" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/postgresql.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/postgresql.png" alt="PostgreSQL" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/mysql.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/mysql.png" alt="mysql" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/mssql-server.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/mssql-server.png" alt="mssql服务器" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/db2.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/db2.png" alt="数据库2" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/sqlite.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/sqlite.png" alt="sqlite" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/sybase.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/sybase.png" alt="赛贝斯" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/mariadb.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/mariadb.png" alt="玛丽亚数据库" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/vertica.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/vertica.png" alt="垂直" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/oracle.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/oracle.png" alt="甲骨文" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/firebird.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/firebird.png" alt="火鸟" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/greenplum.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/greenplum.png" alt="绿梅" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/clickhouse.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/clickhouse.png" alt="点击屋" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/exasol.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/exasol.png" alt="艾沙索" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/monet-db.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/monet-db.png" alt="莫奈数据库" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/apache-kylin.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/apache-kylin.png" alt="阿帕奇麒麟" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/hologres.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/hologres.png" alt="霍洛格雷斯" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/netezza.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/netezza.png" alt="内特扎" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/pinot.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/pinot.png" alt="皮诺" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/teradata.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/teradata.png" alt="泰拉数据" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/yugabyte.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/yugabyte.png" alt="尤加字节" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/databend.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/databend.png" alt="数据弯曲" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/starrocks.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/starrocks.png" alt="星石" border="0" width="200" height="80" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="/apache/superset/blob/master/superset-frontend/src/assets/images/doris.png"><img src="/apache/superset/raw/master/superset-frontend/src/assets/images/doris.png" alt="多丽丝" border="0" width="200" height="80" style="max-width: 100%;"></a>
 </p>
-
-**A more comprehensive list of supported databases** along with the configuration instructions can be found [here](https://superset.apache.org/docs/databases/installing-database-drivers).
-
-Want to add support for your datastore or data engine? Read more [here](https://superset.apache.org/docs/frequently-asked-questions#does-superset-work-with-insert-database-engine-here) about the technical requirements.
-
-## Installation and Configuration
-
-[Extended documentation for Superset](https://superset.apache.org/docs/installation/installing-superset-using-docker-compose)
-
-## Get Involved
-
-- Ask and answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/apache-superset) using the **apache-superset** tag
-- [Join our community's Slack](http://bit.ly/join-superset-slack)
-  and please read our [Slack Community Guidelines](https://github.com/apache/superset/blob/master/CODE_OF_CONDUCT.md#slack-community-guidelines)
-- [Join our dev@superset.apache.org Mailing list](https://lists.apache.org/list.html?dev@superset.apache.org). To join, simply send an email to [dev-subscribe@superset.apache.org](mailto:dev-subscribe@superset.apache.org)
-- If you want to help troubleshoot GitHub Issues involving the numerous database drivers that Superset supports, please consider adding your name and the databases you have access to on the [Superset Database Familiarity Rolodex](https://docs.google.com/spreadsheets/d/1U1qxiLvOX0kBTUGME1AHHi6Ywel6ECF8xk_Qy-V9R8c/edit#gid=0)
-- Join Superset's Town Hall and [Operational Model](https://preset.io/blog/the-superset-operational-model-wants-you/) recurring meetings.  Meeting info is available on the [Superset Community Calendar](https://superset.apache.org/community)
-
-## Contributor Guide
-
-Interested in contributing? Check out our
-[CONTRIBUTING.md](https://github.com/apache/superset/blob/master/CONTRIBUTING.md)
-to find resources around contributing along with a detailed guide on
-how to set up a development environment.
-
-## Resources
-
-- [Superset "In the Wild"](RESOURCES/INTHEWILD.md) - open a PR to add your org to the list!
-- [Feature Flags](RESOURCES/FEATURE_FLAGS.md) - the status of Superset's Feature Flags.
-- [Standard Roles](RESOURCES/STANDARD_ROLES.md) - How RBAC permissions map to roles.
-- [Superset Wiki](https://github.com/apache/superset/wiki) - Tons of additional community resources: best practices, community content and other information.
-- [Superset SIPs](https://github.com/orgs/apache/projects/170) - The status of Superset's SIPs (Superset Improvement Proposals) for both consensus and implementation status.
-
-Superset 2.0!
-- [Superset 2.0 Meetup](https://preset.io/events/superset-2-0-meetup/)
-- [Superset 2.0 Release Notes](https://github.com/apache/superset/tree/master/RELEASING/release-notes-2-0)
-
-Understanding the Superset Points of View
-- [The Case for Dataset-Centric Visualization](https://preset.io/blog/dataset-centric-visualization/)
-- [Understanding the Superset Semantic Layer](https://preset.io/blog/understanding-superset-semantic-layer/)
-
-
-- Getting Started with Superset
-  - [Superset in 2 Minutes using Docker Compose](https://superset.apache.org/docs/installation/installing-superset-using-docker-compose#installing-superset-locally-using-docker-compose)
-  - [Installing Database Drivers](https://superset.apache.org/docs/databases/docker-add-drivers/)
-  - [Building New Database Connectors](https://preset.io/blog/building-database-connector/)
-  - [Create Your First Dashboard](https://superset.apache.org/docs/creating-charts-dashboards/first-dashboard)
-  - [Comprehensive Tutorial for Contributing Code to Apache Superset
-  ](https://preset.io/blog/tutorial-contributing-code-to-apache-superset/)
-- [Resources to master Superset by Preset](https://preset.io/resources/)
-
-- Deploying Superset
-  - [Official Docker image](https://hub.docker.com/r/apache/superset)
-  - [Helm Chart](https://github.com/apache/superset/tree/master/helm/superset)
-
-- Recordings of Past [Superset Community Events](https://preset.io/events)
-  - [Mixed Time Series Charts](https://preset.io/events/mixed-time-series-visualization-in-superset-workshop/)
-  - [How the Bing Team Customized Superset for the Internal Self-Serve Data & Analytics Platform](https://preset.io/events/how-the-bing-team-heavily-customized-superset-for-their-internal-data/)
-  - [Live Demo: Visualizing MongoDB and Pinot Data using Trino](https://preset.io/events/2021-04-13-visualizing-mongodb-and-pinot-data-using-trino/)
-	- [Introduction to the Superset API](https://preset.io/events/introduction-to-the-superset-api/)
-	- [Building a Database Connector for Superset](https://preset.io/events/2021-02-16-building-a-database-connector-for-superset/)
-
-- Visualizations
-  - [Creating Viz Plugins](https://superset.apache.org/docs/contributing/creating-viz-plugins/)
-  - [Managing and Deploying Custom Viz Plugins](https://medium.com/nmc-techblog/apache-superset-manage-custom-viz-plugins-in-production-9fde1a708e55)
-  - [Why Apache Superset is Betting on Apache ECharts](https://preset.io/blog/2021-4-1-why-echarts/)
-
-- [Superset API](https://superset.apache.org/docs/rest-api)
-
-## Repo Activity
-<a href="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats?repo_id=39464018" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=39464018&image_size=auto&color_scheme=dark" width="655" height="auto">
-    <img alt="Performance Stats of apache/superset - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=39464018&image_size=auto&color_scheme=light" width="655" height="auto">
-  </picture>
+<p dir="auto"><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font><a href="https://superset.apache.org/docs/databases/installing-database-drivers" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以在此处找到</font></font></a><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">更全面的受支持数据库列表</font></strong><font style="vertical-align: inherit;">以及配置说明</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">想要添加对您的数据存储或数据引擎的支持吗？请</font></font><a href="https://superset.apache.org/docs/frequently-asked-questions#does-superset-work-with-insert-database-engine-here" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读有关技术要求的</font><font style="vertical-align: inherit;">更多信息。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装与配置</font></font></h2><a id="user-content-installation-and-configuration" class="anchor" aria-label="永久链接：安装和配置" href="#installation-and-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://superset.apache.org/docs/installation/installing-superset-using-docker-compose" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 的扩展文档</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参与其中</font></font></h2><a id="user-content-get-involved" class="anchor" aria-label="永久链接：参与其中" href="#get-involved"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font><strong><font style="vertical-align: inherit;">apache-superset</font></strong><font style="vertical-align: inherit;">标签在</font></font><a href="https://stackoverflow.com/questions/tagged/apache-superset" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StackOverflow</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上提问和回答问题</font></font><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font></li>
+<li><a href="http://bit.ly/join-superset-slack" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我们的 Slack 社区</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+，请阅读我们的</font></font><a href="https://github.com/apache/superset/blob/master/CODE_OF_CONDUCT.md#slack-community-guidelines"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slack 社区准则</font></font></a></li>
+<li><a href="https://lists.apache.org/list.html?dev@superset.apache.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我们的 dev@superset.apache.org 邮件列表</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。要加入，只需发送电子邮件至</font></font><a href="mailto:dev-subscribe@superset.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dev-subscribe@superset.apache.org</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想帮助解决涉及 Superset 支持的众多数据库驱动程序的 GitHub 问题，请考虑在</font></font><a href="https://docs.google.com/spreadsheets/d/1U1qxiLvOX0kBTUGME1AHHi6Ywel6ECF8xk_Qy-V9R8c/edit#gid=0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 数据库熟悉 Rolodex上添加您的姓名和您有权访问的数据库</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入 Superset 的市政厅和</font></font><a href="https://preset.io/blog/the-superset-operational-model-wants-you/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运营模型</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定期会议。会议信息可在</font></font><a href="https://superset.apache.org/community" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 社区日历上查看</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者指南</font></font></h2><a id="user-content-contributor-guide" class="anchor" aria-label="永久链接：贡献者指南" href="#contributor-guide"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有兴趣贡献吗？查看我们的
+</font></font><a href="https://github.com/apache/superset/blob/master/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CONTRIBUTING.md</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+以查找有关贡献的资源以及有关如何设置开发环境的详细指南。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源</font></font></h2><a id="user-content-resources" class="anchor" aria-label="永久链接：资源" href="#resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="/apache/superset/blob/master/RESOURCES/INTHEWILD.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset“In the Wild”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 打开 PR 将您的组织添加到列表中！</font></font></li>
+<li><a href="/apache/superset/blob/master/RESOURCES/FEATURE_FLAGS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能标志</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- Superset 功能标志的状态。</font></font></li>
+<li><a href="/apache/superset/blob/master/RESOURCES/STANDARD_ROLES.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标准角色</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- RBAC 权限如何映射到角色。</font></font></li>
+<li><a href="https://github.com/apache/superset/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset Wiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 大量额外的社区资源：最佳实践、社区内容和其他信息。</font></font></li>
+<li><a href="https://github.com/orgs/apache/projects/170"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset SIP</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Superset 的 SIP（&ZeroWidthSpace;&ZeroWidthSpace;Superset 改进提案）的共识和实施状态状态。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超级组2.0！</font></font></p>
+<ul dir="auto">
+<li><a href="https://preset.io/events/superset-2-0-meetup/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 2.0 聚会</font></font></a></li>
+<li><a href="https://github.com/apache/superset/tree/master/RELEASING/release-notes-2-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset 2.0 发行说明</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">理解超集观点</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><a href="https://preset.io/blog/dataset-centric-visualization/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以数据集为中心的可视化案例</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><a href="https://preset.io/blog/understanding-superset-semantic-layer/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">理解超集语义层</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超级组入门</font></font></p>
+<ul dir="auto">
+<li><a href="https://superset.apache.org/docs/installation/installing-superset-using-docker-compose#installing-superset-locally-using-docker-compose" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Docker Compose 在 2 分钟内完成超级集</font></font></a></li>
+<li><a href="https://superset.apache.org/docs/databases/docker-add-drivers/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装数据库驱动程序</font></font></a></li>
+<li><a href="https://preset.io/blog/building-database-connector/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建新的数据库连接器</font></font></a></li>
+<li><a href="https://superset.apache.org/docs/creating-charts-dashboards/first-dashboard" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建您的第一个仪表板</font></font></a></li>
+<li><a href="https://preset.io/blog/tutorial-contributing-code-to-apache-superset/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向 Apache Superset 贡献代码的综合教程
+</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><a href="https://preset.io/resources/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过预设掌握超级组的资源</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署超级集</font></font></p>
+<ul dir="auto">
+<li><a href="https://hub.docker.com/r/apache/superset" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方 Docker 镜像</font></font></a></li>
+<li><a href="https://github.com/apache/superset/tree/master/helm/superset"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">舵图</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">过去</font></font><a href="https://preset.io/events" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超级组社区活动的录音</font></font></a></p>
+<ul dir="auto">
+<li><a href="https://preset.io/events/mixed-time-series-visualization-in-superset-workshop/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">混合时间序列图表</font></font></a></li>
+<li><a href="https://preset.io/events/how-the-bing-team-heavily-customized-superset-for-their-internal-data/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bing 团队如何为内部自助数据和分析平台定制超级集</font></font></a></li>
+<li><a href="https://preset.io/events/2021-04-13-visualizing-mongodb-and-pinot-data-using-trino/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现场演示：使用 Trino 可视化 MongoDB 和 Pinot 数据</font></font></a>
+<ul dir="auto">
+<li><a href="https://preset.io/events/introduction-to-the-superset-api/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Superset API 简介</font></font></a></li>
+<li><a href="https://preset.io/events/2021-02-16-building-a-database-connector-for-superset/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为 Superset 构建数据库连接器</font></font></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可视化</font></font></p>
+<ul dir="auto">
+<li><a href="https://superset.apache.org/docs/contributing/creating-viz-plugins/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建可视化插件</font></font></a></li>
+<li><a href="https://medium.com/nmc-techblog/apache-superset-manage-custom-viz-plugins-in-production-9fde1a708e55" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理和部署自定义可视化插件</font></font></a></li>
+<li><a href="https://preset.io/blog/2021-4-1-why-echarts/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么 Apache Superset 押注 Apache ECharts</font></font></a></li>
+</ul>
+</li>
+<li>
+<p dir="auto"><a href="https://superset.apache.org/docs/rest-api" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超集API</font></font></a></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回购活动</font></font></h2><a id="user-content-repo-activity" class="anchor" aria-label="永久链接：回购活动" href="#repo-activity"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<a href="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats?repo_id=39464018" align="center" rel="nofollow">
+  <themed-picture data-catalyst-inline="true" data-catalyst=""><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://camo.githubusercontent.com/60c385b9756654fc12ce36a45a0c0f568d3de334ebded90ea7a0174702e098af/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6c6173742d32382d646179732d73746174732f7468756d626e61696c2e706e673f7265706f5f69643d333934363430313826696d6167655f73697a653d6175746f26636f6c6f725f736368656d653d6461726b" width="655" height="auto" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=39464018&amp;image_size=auto&amp;color_scheme=dark">
+    <img alt="apache/superset 的性能统计 - 过去 28 天" src="https://camo.githubusercontent.com/83911294f643865f6225136794faab045b0ee5c1f52a7d9d89d4fe68629bfb50/68747470733a2f2f6e6578742e6f7373696e73696768742e696f2f776964676574732f6f6666696369616c2f636f6d706f73652d6c6173742d32382d646179732d73746174732f7468756d626e61696c2e706e673f7265706f5f69643d333934363430313826696d6167655f73697a653d6175746f26636f6c6f725f736368656d653d6c69676874" width="655" height="auto" data-canonical-src="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=39464018&amp;image_size=auto&amp;color_scheme=light" style="visibility:visible;max-width:100%;">
+  </picture></themed-picture>
 </a>
 
-<!-- Made with [OSS Insight](https://ossinsight.io/) -->
 
-<!-- telemetry/analytics pixel: -->
-<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=bc1c90cd-bc04-4e11-8c7b-289fb2839492" />
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5e544785905060a887238de120a54973755322b65f2c9ddd6c7e48fa67116a9d/68747470733a2f2f7374617469632e73636172662e73682f612e706e673f782d707869643d62633163393063642d626330342d346531312d386337622d323839666232383339343932"><img src="https://camo.githubusercontent.com/5e544785905060a887238de120a54973755322b65f2c9ddd6c7e48fa67116a9d/68747470733a2f2f7374617469632e73636172662e73682f612e706e673f782d707869643d62633163393063642d626330342d346531312d386337622d323839666232383339343932" data-canonical-src="https://static.scarf.sh/a.png?x-pxid=bc1c90cd-bc04-4e11-8c7b-289fb2839492" style="max-width: 100%;"></a></p>
+</article></div>
